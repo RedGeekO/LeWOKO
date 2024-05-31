@@ -1,0 +1,188 @@
+body {
+  margin: 0%;
+  width: 100%;  
+  background-color: #F4E098;
+  font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
+  position: relative;
+  /* overflow-x:hidden;
+  align-items: center;
+  justify-content: center; */
+
+}
+
+/* MARQUEE (sans la balise html obsolète */
+@keyframes marquee { 
+    0%   { text-indent: 100% }
+    100% { text-indent: -300% }
+}
+
+#marqueeLike {
+    padding:0.3em;
+    width: 100%;
+    background-color: #f59e82;
+    color: white;
+    position: absolute;
+    height: 2em;
+    overflow: hidden;
+    animation: marquee 50s linear infinite;
+  }
+
+  header {
+    width:100%;
+  }
+
+  #enTete {
+    width: 100%;
+    height: 11em;
+    background-size: cover;
+  }
+
+  #navigation {
+    width: 100%;
+    margin: 0.5em;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: solid white;
+  }
+
+  .navigation img {
+    width: 5em;
+    height: 5em;
+  }
+
+
+  .navigation p {
+    text-transform: uppercase;
+    margin: 1em;
+    font-size: 1.5em;
+    color: black;
+    font-weight: 700;
+  }
+
+  /* IMAGE INTRO, TITRES et TEXTE  */
+  #titre {
+    width: 100%;
+    background-image: url(Images/equipe-agricole-feminine-heureuse-dans-ferme-legumes-biologiques-luxuriantes_818261-48346.jpg);
+    height: 40em;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    position:relative;
+    opacity: 50%;
+    background-color: #cc0000 (56%);
+
+      z-index: 1;
+  }
+
+  h1 {
+    margin: 1em;
+    padding: 1em;
+    color: white;
+    font-size:3em;
+    width: 55%;
+    z-index: index 2;
+    height:min-content;
+  }
+  
+  h2 {
+    margin: 1em;
+    padding: 1em;
+    color: white;
+    font-size:2em;
+    font-weight: 400;
+    width: 55%;
+    z-index: index 2;
+  }
+
+  h4 {
+    Text-align: center;
+    background-color: #f59e82;
+    font-size: x-large;
+    width: 40%;
+    height: 3em;
+    border-radius: 20px;
+    box-shadow: 10px, 10px;
+    align-content: center;
+  }
+  
+  .sous-titre {
+    margin: 1em;
+    padding: 1em;
+    color: white;
+    font-size:3em;
+    font-weight: 600;
+    border: 1em;
+    width: 60%;
+    position: relative;
+    top: 9em;
+    left: 25%;
+  }
+
+  strong {
+    font-weight: bold;
+    color: midnightblue;
+    font-size: large;
+  }
+
+  em {
+    color:#a50808;
+    font-style: normal;
+    font-family: inter, Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size:larger;
+  }
+
+  /* TENTATIVE DE FILTRE ROUGE SUR L'IMAGE DU TITRE */
+  /* MARCHE PAS */
+
+  /* LOGO 2 ET DECLARATION (MISSION STATEMENT° */
+
+  /* BLOCS */
+  #intro {
+    margin: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #mission, #laïus, #icons {
+    width: 95%;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: grey 10px;
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+   }
+
+   .identity {
+    height: 30em;
+   }
+
+   .missionStatement {
+    height: 50em;
+   }
+
+   .reassur {
+    height: 15em;
+   }
+
+
+
+   #mission img{
+    width:30em;
+    margin: 1%;
+   }
+
+   #mission p, #laïus p {
+    display:inline-block;
+    color: green;
+    font-size: 3.5em;
+    font-weight: 500;
+    text-align: center;
+    padding: 0.5em;
+  }
+
+  
