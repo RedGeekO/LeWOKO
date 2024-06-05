@@ -1,0 +1,440 @@
+body {
+  margin: 0%;
+  width: 100%;  
+  background-color: #F4E098;
+  font-family: inter, Verdana, Geneva, Tahoma, sans-serif;
+  position: relative;
+  overflow-x:hidden;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+/* MARQUEE (sans la balise html obsolète */
+@keyframes marquee { 
+    0%   { text-indent: 100% }
+    100% { text-indent: -300% }
+}
+
+#marqueeLike {
+    padding:0.3em;
+    width: 100%;
+    background-color: #f59e82;
+    color: white;
+    position: absolute;
+    height: 2em;
+    overflow: hidden;
+    animation: marquee 50s linear infinite;
+  }
+
+  /* HEADER */
+  header {
+    width:100%;
+  }
+
+  #enTete {
+    width: 100%;
+    height: 11em;
+    background-size: cover;
+  }
+
+  #navigation {
+    width: 95%;
+    margin-left: 3em;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    /* border: solid white; */
+    position: relative;
+    right: 1em;
+  }
+
+  .navigation img {
+    width: 7em;
+    height: 7em;
+    /* position: absolute; */
+  }
+
+  .navigation p {
+    text-transform: uppercase;
+    margin: 1.5em;
+    font-size: 1.5em;
+    color: black;
+    font-weight: 700;
+  }
+
+  .navigation p:hover{
+    color: midnightblue;
+    text-decoration: none;
+    font-size: 1.6em;
+  }
+  
+  /* IMAGE INTRO, TITRES POLICES et TEXTE  */
+
+/* Titre H1 H2 + sous-Titre sur image = #titre */
+  #titre{
+    width: 100%;
+    background-image: url(Images/equipe-agricole-feminine-heureuse-dans-ferme-legumes-biologiques-luxuriantes_818261-48346.jpg);
+    height: 33em;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    position: relative;
+    opacity: 75%;
+    box-shadow: 6px 6px 25px grey;
+    }
+
+  #titre::after {
+      content: "" ;
+      width: 100%;
+      height: 33em;
+      background-color: red ;
+      opacity: 50%;
+      position: absolute;
+    }
+  
+  h1 {
+    margin: 1em;
+    color: white;
+    font-size:4em;
+    width: 55%;
+    position: absolute;
+    right: 7.7em;
+    z-index: 2;
+  }
+  
+  h2 {
+    margin: 1em;
+    color:white;
+    font-size:2.5em;
+    font-weight: 400;
+    position: absolute;
+    top: 3em;
+    right: 15em;
+    z-index: 2;
+  }
+
+/* 3eme titre = .sous-titre pas en H3 because Google BOT */
+  .sous-titre {
+    margin: 1em;
+    padding: 1em;
+    color: white;
+    font-size:4em;
+    font-weight: 400;
+    font-style: normal;
+    border: 1em;
+    width: 80%;
+    position: absolute;
+    top: 3.5em;
+    left: 2em;
+    z-index: 2;
+  }
+
+  h4 {
+    text-align: center;
+    color: midnightblue;
+    background-color: #f59e82;
+    font-size: x-large;
+    width: 40%;
+    height: 3em;
+    border: solid black 1px;
+    border-radius: 20px;
+    box-shadow: 10px, 10px;
+    align-content: center;
+    align-self: center;
+    box-shadow: 6px 6px 25px grey;
+  }
+
+  h5{
+    color: white;
+    font-size: 2em;
+    font-family: inter;
+    /* padding: 1em; */
+      }
+  
+  strong {
+    font-weight: bold;
+    color: midnightblue;
+    font-size: large;
+  }
+
+  em {
+    color:#a50808;
+    font-style: normal;
+    font-family: inter, Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size:larger;
+  }
+
+  .poller-one-regular {
+    font-family: "Poller One", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .bungee-regular {
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .inter {
+    font-family: inter, sans-serif;
+    font-weight: 00;
+    font-style: bold;
+  }
+  
+  /* LOGO 2 ET DECLARATION (MISSION STATEMENT= */
+
+  section{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+  /* BLOCS */
+  #intro {
+    margin: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  #outils {
+    margin: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #mission, #laïus, #icons, #vente {
+    width: 95%;
+    background-color: white;
+    border-radius: 15px;
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    box-shadow: 6px 6px 25px grey;
+   }
+
+   .identity {
+    height: 27em;
+    box-shadow: 6px 6px 25px grey;
+    padding-left: 4em;
+  }
+   
+   #mission img{
+    width:25em;
+    height: 25em;
+    margin: 1%;
+   }
+
+  #statement {
+    color: green;
+    font-size: 3em;
+    font-weight: 500;
+    text-align: center;
+    padding: 0.5em;
+    position: absolute;
+    left: 13em;
+    width: 40%;
+  }
+  
+  .missionStatement {
+    height: 22em;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3em;
+    padding-left: 6em;
+    padding-right: 6em;
+   }
+
+  /* BLOC ICONS */
+  .reassur {
+    height: 15em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2em;
+   }
+
+   #icons img {
+    width: 5em;
+    height: 5em;
+   }
+
+   .iconAndText {
+    display: flex;
+    flex-wrap: wrap;  
+    flex-direction: column;
+   }
+   
+   #icons p {
+    height: 10em;
+    width: 10em;
+    text-align: center ;
+  }
+
+  /* VIDEO */
+
+  #ecommerce{
+    width: 100%;
+    background-color: green;
+    height: 83em;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    flex-direction: row;
+  } 
+
+  #intro-ecommerce {
+    margin-left: 4em;
+    width:90%;
+    height: 33em;;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: white;
+    border-radius: 25px; 
+    box-shadow: 6px 6px 25px rgb(131, 17, 17);
+  }
+  
+  
+  .video{
+    width:90%;
+    height: 20em;;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    box-shadow: 6px 6px 25px grey;
+    border-radius: 15px;
+    position: relative;
+  }
+  
+  iframe {
+    width: 87%;
+    height: 25em;
+    border-radius: 15px;
+    box-shadow: 6px 6px 25px green;
+  }
+
+  .video::after {
+    content: "" ;
+    width: 87%;
+    height: 25em;
+    background-color: yellowgreen ;
+    opacity: 50%;
+    position: absolute;
+    top: 4em;
+  }
+  
+  .video:hover::after{
+      z-index: -1;
+  }
+
+  #textIntroEcommerce {
+    margin: 3em;
+    margin-left: 4em;
+    width: 78%;
+    height: 21em;
+    background-color: white;
+    border-radius: 25px;
+    align-self: center;
+    padding: 3em;
+    padding-left: 6em;
+    padding-right: 6em;
+    border-radius: 25px; 
+    box-shadow: 6px 6px 25px rgb(131, 17, 17);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+  }
+
+  #statement2 {
+    color: green;
+    font-size: 1em;
+    font-weight: 700;
+    position: absolute;
+    top: 23em;
+  }
+
+  /* CARTES */
+#produits {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.produit {
+  width: 25%;
+  height: 35em;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 6px 6px 25px grey;
+  border: solid black 2px;
+}
+
+.produit:hover {
+  border: solid yellowgreen 6px;
+}
+
+#productCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* #productCards h4{
+  align-self:center;
+} */
+
+/* FORMULAIRE DE PAIEMENT */
+
+#formulaire {
+  margin-left: 6em; 
+}
+
+#paiement{
+  width: 80%;
+  height: 50em;
+  background-color: #a50808;
+  border-radius: 20px;
+  opacity: 70%;
+  box-shadow: 8px 8px palevioletred;
+}
+
+/* FOOTER */
+
+footer {
+  background: linear-gradient(90deg, green, #8360c3, #2ebf91);
+  margin: 0%;
+  width:100%;
+  height: 59em;
+  position: relative;
+}
+
+/* #liens {
+  /* width: 100%; */
+  /* height: 40em; */
+/* } */
+
+footer:after{
+  content: "";
+  width: 100%;
+  height: 10em;
+  background-color: aliceblue;
+  position: absolute;
+  top:49em; 
+}
