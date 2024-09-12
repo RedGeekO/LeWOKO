@@ -119,7 +119,16 @@ body {
     z-index: 2;
   }
 
-/* 3eme titre = .sous-titre pas en H3 because Google BOT */
+  h3 {
+    margin: 1em;
+    color:white;
+    font-size:2.5em;
+    font-weight: 1000;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+  }
+
+  /* 3eme titre = .sous-titre pas en H3 because Google BOT */
   .sous-titre {
     margin: 1em;
     padding: 1em;
@@ -139,7 +148,7 @@ body {
     text-align: center;
     color: midnightblue;
     background-color: #f59e82;
-    font-size: x-large;
+    font-size: 2em;
     width: 40%;
     height: 3em;
     border: solid black 1px;
@@ -156,7 +165,14 @@ body {
     font-family: inter;
     /* padding: 1em; */
       }
-  
+
+  h6 {
+    text-align: center;
+    margin: 1rem;
+    font-size: medium;
+    font-weight: 500;
+  }                                      
+
   strong {
     font-weight: bold;
     color: midnightblue;
@@ -171,7 +187,8 @@ body {
     font-size:larger;
   }
 
-  .poller-one-regular {
+/* POLICES */
+.poller-one-regular {
     font-family: "Poller One", serif;
     font-weight: 400;
     font-style: normal;
@@ -187,10 +204,10 @@ body {
     font-family: inter, sans-serif;
     font-weight: 00;
     font-style: bold;
+    width: 75%;
   }
   
   /* LOGO 2 ET DECLARATION (MISSION STATEMENT= */
-
   section{
   display: flex;
   flex-wrap: wrap;
@@ -307,7 +324,6 @@ body {
     box-shadow: 6px 6px 25px rgb(131, 17, 17);
   }
   
-  
   .video{
     width:90%;
     height: 20em;;
@@ -347,7 +363,6 @@ body {
     width: 78%;
     height: 21em;
     background-color: white;
-    border-radius: 25px;
     align-self: center;
     padding: 3em;
     padding-left: 6em;
@@ -377,8 +392,8 @@ body {
 }
 
 .produit {
-  width: 25%;
-  height: 35em;
+  width: 26%;
+  height: 41em;
   background-color: white;
   border-radius: 10px;
   box-shadow: 6px 6px 25px grey;
@@ -396,23 +411,205 @@ body {
   align-items: center;
 }
 
-/* #productCards h4{
-  align-self:center;
-} */
+/* CONTENU CARTES */
+figure {
+  position:relative
+}
+
+figure img{
+  margin: 1em;
+  width: 90%;
+  height: 14em;
+}
+
+.coeur {
+  height: 2em;
+  width: 2em;
+  position: absolute;
+  bottom: 19em;
+  left: 75%;
+}
+
+.stars{
+width: 65%;
+height: 2.5em;
+position: absolute;
+left: 0.1em;
+bottom: 5.5em;
+}
+
+.price{
+  margin-left: 2em;
+  font-weight: 600;
+}
+
+.descr{
+  margin: 1.5em;
+  font-size: small;
+  position: absolute;
+  top: 26em;
+}
+
+.avis{
+  margin: 1em;
+  font-size: small;
+  position: absolute;
+  top: 42em;
+}
+
+.boutons {
+  border: 0;
+  line-height: 2.5;
+  padding: 0 10px;
+  font-size: 1em;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: rgba(220, 0, 0, 1);
+  background-image: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0)
+  );
+  box-shadow:
+    inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+
+    position:absolute;
+    bottom: 6.4em;
+    left: 15.5em;
+}
+
+.boutons:hover {
+  background-color: rgba(255, 0, 0, 1);
+}
+
+.boutons:active {
+  box-shadow:
+    inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
 
 /* FORMULAIRE DE PAIEMENT */
-
 #formulaire {
   margin-left: 6em; 
 }
 
+form{
+  padding: 2em;
+  align-content: center;
+}
+
 #paiement{
-  width: 80%;
-  height: 50em;
+  width: 55%;
+  display: flex;;
+  justify-content: space-around;
+  flex-direction: row;
   background-color: #a50808;
   border-radius: 20px;
   opacity: 70%;
   box-shadow: 8px 8px palevioletred;
+
+}
+
+.PayPal{
+  width: 2em;
+  height: 2em;
+}
+
+.alterPay{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: rgb(235, 231, 10);
+  font-size: 1.5em;
+  text-decoration:underline;
+}
+
+.confirm{
+  color: aliceblue;
+  font-size: 1.3em;
+}
+
+.field{
+  padding-left:1em;
+  margin-left:2em;
+  width: 80%;
+  height: 2em;
+  border-radius: 25px;
+  box-shadow: #996757 4px 3px;
+}
+
+.field-tittle{
+  font-size: 1em;
+  color: aliceblue;
+}
+
+#checkboxNewsletter{
+  width:2em;
+  height: 2em;
+}
+
+.newsletter{
+  color: aliceblue;
+}
+
+#validator {
+  width:90%;
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 2em;
+  text-align: center;
+  color: #6407fa;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 40px;
+  background-color: rgb(243, 208, 7);
+  background-image: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0)
+  );
+  box-shadow:
+    inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+
+    position:absolute;
+    top: 38em;
+    left: 1em;
+
+}
+
+#validator:hover {
+  background-color: rgb(250, 29, 0);
+  color: aliceblue;
+  box-shadow: aliceblue 4px 4px;
+}
+
+#validator:active {
+  box-shadow:
+    inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+
+/*  REMERCIEMENT AR/COMMANDE*/
+
+#remerciements{
+  width: 75%;
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: aliceblue;
+  border: solid black 2px;
+  border-radius: 40px;
+  box-shadow: #f59e82 4px 4px;
 }
 
 /* FOOTER */
@@ -421,20 +618,73 @@ footer {
   background: linear-gradient(90deg, green, #8360c3, #2ebf91);
   margin: 0%;
   width:100%;
-  height: 59em;
+  /* height: 59em; */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
   position: relative;
 }
 
-/* #liens {
-  /* width: 100%; */
-  /* height: 40em; */
-/* } */
 
 footer:after{
   content: "";
   width: 100%;
-  height: 10em;
+  height: 1em;
   background-color: aliceblue;
   position: absolute;
-  top:49em; 
+  z-index: 1;
+  top:55em; 
+
+}
+
+.footer-image{
+  width: 10em;
+  height: 10em;
+}
+
+.footer-image2{
+width: 10em;
+height: 3em;
+}
+
+#liens {
+  width: 100%;
+  height: 35em;
+  color:aliceblue;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content:baseline;
+  align-items:center;
+  font-size: x-large;
+  font-weight: 600;
+}
+
+.footer-links {
+  width:25%;  
+  color: aliceblue;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  align-items: center;
+}
+
+.liens{
+  width:26%;
+  font-size: medium;
+  font-weight: 600;
+  text-shadow: solid black 4px 4px;
+  text-decoration: underline lightblue;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-justify: distribute;
+  align-content:flex-start;
+}
+
+.countries{
+  display: inline-block;
+  flex-direction: column;
 }
