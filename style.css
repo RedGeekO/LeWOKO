@@ -601,6 +601,7 @@ form{
 
 #remerciements{
   width: 75%;
+  margin:2em;
   display:flex;
   flex-wrap:wrap;
   flex-direction: column;
@@ -684,7 +685,14 @@ height: 3em;
   align-content:flex-start;
 }
 
-.countries{
-  display: inline-block;
-  flex-direction: column;
+#countries{
+  width: 100%;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  align-items: center;
 }
+
+
+/* MEDIA QUERIES */
+
