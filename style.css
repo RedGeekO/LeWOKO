@@ -17,6 +17,11 @@ body {
     0%   { text-indent: 100% }
     100% { text-indent: -300% }
 }
+/* POSER MARQUEE2LIKE POUR DEROULEMENT CONTINU REVOIR LES VALEURS */
+/* @keyframes marquee2 { 
+  ***100%***   { text-indent: ***0%*** }
+  ***0%*** { text-indent: ***300%*** }
+} */
 
 #marqueeLike {
     padding:0.3em;
@@ -27,6 +32,7 @@ body {
     height: 2em;
     overflow: hidden;
     animation: marquee 50s linear infinite;
+    animation: marquee2 50s linear infinite;
   }
 
   /* HEADER */
@@ -42,7 +48,7 @@ body {
 
   #navigation {
     width: 95%;
-    margin-left: 3em;
+    margin-left: 1.5em;
     display:flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -55,7 +61,7 @@ body {
   .navigation img {
     width: 7em;
     height: 7em;
-    /* position: absolute; */
+
   }
 
   .navigation p {
@@ -696,29 +702,69 @@ height: 3em;
 
 /* MEDIA QUERIES */
 
-/* Mobiles */
+/* MOBILESs */
 @media only screen and (max-width: 767px) {
+
+  /* Styles */
+
   #produits {
-    /* display: flex;
-    flex-wrap: wrap; */
     flex-direction: column;
     width: 90%;
-    /* justify-content: space-evenly; */
   }
-   /* Styles */
 
    .produit {
     width: 98%;
    
   }
+
+  #marqueeLike {
+    animation: marquee 20s linear infinite;
+  }
+
+  .navigation img {
+    width: 7em;
+    height: 7em;
+
+  }
+
+  .navigation p {
+    text-transform: uppercase;
+    margin: 0.75em;
+    font-size: 0.9em;
+    color: black;
+    font-weight: 400;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; 
+  }
+
+  #titre::after {
+    height: 17.2em;
+  }
+
+h1{
+  font-size: 1.5em;
+  top:1em;
+  right: 6em;
 }
 
-/* Tablettes */
+h2{
+  font-size: 1.1em;
+  top:4em;
+  right: 10em;
+}
+
+.sous-titre{
+  position:absolute;
+  font-size:x-large;
+  top: 5.5em;
+  left: 2em;
+}
+
+/* TABLETTE */
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   /* Styles */
   #produits {
-    /* display: flex;
-    flex-wrap: wrap; */
     flex-direction: row;
     width: 90%;
   }
@@ -741,6 +787,7 @@ height: 3em;
 
     .sous-titre {
       left: 4em;
+      top: 2.5em;
       font-size: 3.5em;
       width: 45%;
     }
@@ -766,10 +813,8 @@ height: 3em;
 .boutons {
   width:2em;
   height: 2em;
-  line-height: 2;
   padding: 0 5px;
-  font-size: 1em;
-
+  right: 1em;
 }
 
 form {
@@ -809,7 +854,22 @@ footer {
 
 footer:after{
   top:45.5em; 
+}
 
+.produit {
+  height: 42em;
+}
+
+.avis{
+  top: 43em;
+}
+
+}
+
+.navigation img {
+  width: 3em;
+  height: 3em;
+flex-direction: column;
 }
 
 }
