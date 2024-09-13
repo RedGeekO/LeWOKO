@@ -291,6 +291,7 @@ body {
     display: flex;
     flex-wrap: wrap;  
     flex-direction: column;
+    /* font-size:medium ; */
    }
    
    #icons p {
@@ -497,7 +498,7 @@ bottom: 5.5em;
   margin-left: 6em; 
 }
 
-form{
+form {
   padding: 2em;
   align-content: center;
 }
@@ -631,7 +632,7 @@ footer {
 footer:after{
   content: "";
   width: 100%;
-  height: 1em;
+  height: 0.5em;
   background-color: aliceblue;
   position: absolute;
   z-index: 1;
@@ -663,17 +664,16 @@ height: 3em;
 }
 
 .footer-links {
-  width:25%;  
+  width:26%;  
   color: aliceblue;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  /* justify-content: space-around; */
   align-items: center;
 }
 
 .liens{
-  width:26%;
+  width:27%;
   font-size: medium;
   font-weight: 600;
   text-shadow: solid black 4px 4px;
@@ -696,3 +696,120 @@ height: 3em;
 
 /* MEDIA QUERIES */
 
+/* Mobiles */
+@media only screen and (max-width: 767px) {
+  #produits {
+    /* display: flex;
+    flex-wrap: wrap; */
+    flex-direction: column;
+    width: 90%;
+    /* justify-content: space-evenly; */
+  }
+   /* Styles */
+
+   .produit {
+    width: 98%;
+   
+  }
+}
+
+/* Tablettes */
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  /* Styles */
+  #produits {
+    /* display: flex;
+    flex-wrap: wrap; */
+    flex-direction: row;
+    width: 90%;
+  }
+ 
+  .produit {
+    width: 38%;
+   
+  }
+
+  h1 {
+    right: 4.5em;
+  
+  }
+
+  #statement {  
+    left: 14em;
+    font-size: xx-large;
+    width: 32%;
+    }
+
+    .sous-titre {
+      left: 4em;
+      font-size: 3.5em;
+      width: 45%;
+    }
+
+    .missionStatement {
+      height: 35em;
+    }
+
+    .iconAndText {
+      display: flex;
+      flex-wrap: wrap;  
+      flex-direction: column;
+      font-size:small ;
+     }
+     
+     #icons p {
+      height: 8em;
+      width: 8em;
+      text-align: center ;
+  
+}
+
+.boutons {
+  width:2em;
+  height: 2em;
+  line-height: 2;
+  padding: 0 5px;
+  font-size: 1em;
+
+}
+
+form {
+  width: 90%;
+  padding: 2em;
+  align-content: center;
+}
+
+#formulaire {
+  margin-left: 6em; 
+  width: 90%;
+}
+
+#paiement{
+  width: 85%;
+bottom: 1em;
+}
+
+#remerciements{
+  padding: 2em;
+}
+
+#liens {
+font-size: small;
+
+}
+
+.liens{
+  font-size: small;
+  text-decoration: none;
+}
+
+footer {
+  padding: 2em;
+  height: 42em;
+}
+
+footer:after{
+  top:45.5em; 
+
+}
+
+}
