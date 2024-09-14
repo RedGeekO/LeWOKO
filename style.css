@@ -53,7 +53,6 @@ body {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-evenly;
-    /* border: solid white; */
     position: relative;
     right: 1em;
   }
@@ -130,9 +129,8 @@ body {
     color:white;
     font-size:2.5em;
     font-weight: 1000;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-align: center;
-  }
+    text-align: center;  
+    }
 
   /* 3eme titre = .sous-titre pas en H3 because Google BOT */
   .sous-titre {
@@ -169,7 +167,6 @@ body {
     color: white;
     font-size: 2em;
     font-family: inter;
-    /* padding: 1em; */
       }
 
   h6 {
@@ -195,19 +192,19 @@ body {
 
 /* POLICES */
 .poller-one-regular {
-    font-family: "Poller One", serif;
+    font-family:"Poller-One", serif;
     font-weight: 400;
     font-style: normal;
   }
 
-  .bungee-regular {
+.bungee-regular {
     font-family: "Bungee", sans-serif;
     font-weight: 400;
     font-style: normal;
   }
 
-  .inter {
-    font-family: inter, sans-serif;
+.inter {
+    font-family:"inter", sans-serif;
     font-weight: 00;
     font-style: bold;
     width: 75%;
@@ -722,25 +719,17 @@ height: 3em;
   }
 
   .navigation img {
-    width: 7em;
-    height: 7em;
+    width: 3em;
+    height: 3em;
 
   }
 
   .navigation p {
-    text-transform: uppercase;
     margin: 0.75em;
     font-size: 0.9em;
-    color: black;
     font-weight: 400;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column; 
   }
 
-  #titre::after {
-    height: 17.2em;
-  }
 
 h1{
   font-size: 1.5em;
@@ -759,6 +748,14 @@ h2{
   font-size:x-large;
   top: 5.5em;
   left: 2em;
+}
+
+#titre{
+  height: 15em;
+}
+
+#titre::after {
+  height: 15em;
 }
 
 /* TABLETTE */
@@ -864,12 +861,10 @@ footer:after{
   top: 43em;
 }
 
-}
-
 .navigation img {
   width: 3em;
   height: 3em;
 flex-direction: column;
 }
-
+}
 }
